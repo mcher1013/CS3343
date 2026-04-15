@@ -1,0 +1,6 @@
+timestamp,orderNumber,itemCount,total,items
+2026-04-06 20:59:55,1001,1,12.99,Margherita ($12.99)
+2026-04-06 21:11:14,1002,1,12.49,Custom Pizza + Cheese ($12.49)
+2026-04-06 23:57:24,1003,1,12.49,Custom Pizza + Cheese ($12.49)
+2026-04-07 01:01:45,1004,2,35.48,Seafood Special ($19.99) | Custom Pizza + Cheese + Mushroom + Pepperoni ($15.49)
+2026-04-15 16:19:20,1005,1,14.50,Veggie Delight ($14.50)
