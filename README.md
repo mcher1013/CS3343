@@ -11,11 +11,17 @@ javac *.java
 java Main
 ```
 
-Optional pricing checks:
+Optional pricing checks (JUnit 4):
 
 ```bash
-java -ea PizzaPricingTest
+# Compile app + tests with test libraries
+javac -cp "lib/junit-4.13.2.jar:lib/hamcrest-2.2.jar:." *.java
+
+# Run the test class
+java -cp "lib/junit-4.13.2.jar:lib/hamcrest-2.2.jar:." org.junit.runner.JUnitCore PizzaPricingTest
 ```
+
+You can also run `PizzaPricingTest` directly from your IDE's JUnit runner.
 
 ## Data files
 
@@ -123,4 +129,4 @@ flowchart LR
 | `PizzaMenu` / `ToppingMenu` | Facade over management classes for UI |
 | `PizzaManagement` / `ToppingManagement` | Load/save CSV menu data |
 | `CsvUtil` | Escaping and parsing for CSV lines |
-| `PizzaPricingTest` | Manual `main` tests for cart and price math |
+| `PizzaPricingTest` | JUnit tests for cart and pricing math |
